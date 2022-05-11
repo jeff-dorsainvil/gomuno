@@ -1,0 +1,26 @@
+{
+    "name": "gomuno",
+    "version": "1.0.0",
+    "description": "This discord bot was created in order for me to play with the Discord.js API",
+    "main": "./src/index.js",
+    "scripts": {
+        "dev": "nodemon index.js",
+        "deploy-commands": "node /src/commands/deploy-commands.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@discordjs/builders": "^0.13.0",
+        "@discordjs/rest": "^0.4.1",
+        "axios": "^0.26.1",
+        "cheerio": "^1.0.0-rc.10",
+        "coinbase": "^2.0.8",
+        "discord-api-types": "^0.31.2",
+        "discord.js": "^13.6.0",
+        "dotenv": "^16.0.0",
+        "mongodb": "^4.5.0",
+        "mongoose": "^6.3.1",
+        "nodemon": "^2.0.16"
+    }
+}
