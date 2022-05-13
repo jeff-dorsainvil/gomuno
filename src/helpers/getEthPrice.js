@@ -1,4 +1,5 @@
 const axios = require("axios");
+const { mesari_api_key } = require("../../config.json");
 
 module.exports = async function () {
     /**
@@ -10,7 +11,7 @@ module.exports = async function () {
             method: "GET",
             url: "https://data.messari.io/api/v1/assets/eth/metrics/market-data",
             headers: {
-                "x-messari-api-key": "1b6826cf-0661-48bb-94fa-6204052ddc60",
+                "x-messari-api-key": mesari_api_key,
             },
         };
 
