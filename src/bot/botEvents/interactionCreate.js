@@ -1,5 +1,5 @@
-const { botStatus } = require("../helpers/constants");
-const commands = require("../commands/allCommands");
+const { botStatus } = require("../../helpers/constants");
+const commands = require("../botCommands/allCommands");
 
 module.exports = async function (interaction) {
     /**

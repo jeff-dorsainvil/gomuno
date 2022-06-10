@@ -6,9 +6,10 @@ module.exports = async function (whichPrice, interaction) {
      * @description This function gets the required price from the database and sends
      *  it to the client
      * @param {String} whichPrice - This can be either min for minimum price or max for maximum price
-     * @param {Interaction} interaction
+     * @param {Object} interaction
      * @returns {undefined}
      */
+
     switch (whichPrice) {
         case "min":
             try {

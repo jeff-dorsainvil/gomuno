@@ -6,10 +6,6 @@ const ServersSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
-    users: {
-        type: Object,
-        default: {},
-    },
     server_name: {
         type: String,
         required: true,

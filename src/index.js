@@ -1,9 +1,9 @@
 const { Client, Intents } = require("discord.js");
 
 const { bot_token } = require("../config.json");
-const mongo = require("./db/dbconfig");
 const handleAlert = require("./helpers/handleAlert");
-const interactionCreateHandler = require("./events/interactionCreate");
+const interactionCreateHandler = require("./bot/botEvents/interactionCreate");
+const ready = require("./bot/botEvents/ready");
 
 const option = {
     intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
@@ -13,17 +13,12 @@ const option = {
 const client = new Client(option);
 
 // When the client is ready, run this code (only once)
-client.once("ready", async () => {
-    console.log("Ready...");
+client.once("ready", ready);
 
-    // Open a DB connection when the bot is online
-    mongo().catch(error => console.log(error));
-});
-
-// Checking if we should alert the client of the current price of ETH within 5 minutes interval
+// Send an alert to the client each 5 minutes if one of the conditions set by the user is met
 setInterval(() => handleAlert(client), 300000);
 
-// When there's an interaction from the client
+// When there's an interaction
 client.on("interactionCreate", interactionCreateHandler);
 
 // Login to Discord with client's token

@@ -1,7 +1,7 @@
-const getDescriptions = require("../helpers/description");
-const getEthPrice = require("../helpers/getEthPrice");
-const getPrice = require("../helpers/getPrice");
-const setPrice = require("../helpers/setPrice");
+const getDescriptions = require("../../helpers/description");
+const getEthPrice = require("../../helpers/getEthPrice");
+const getPrice = require("../../helpers/getPrice");
+const setPrice = require("../../helpers/setPrice");
 
 const commands = {
     DESCRIPTION: {
