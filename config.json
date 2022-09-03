@@ -1,8 +1,8 @@
 {
-    "db_url": "mongodb+srv://Gomuno:Redroc@maincluster.cdf73.mongodb.net/clients?retryWrites=true&w=majority",
-    "client_id": "967211038707712120",
-    "server_id": "973792852851167272",
-    "target_channel": "973793860553670676",
-    "bot_token": "OTY3MjExMDM4NzA3NzEyMTIw.GrAuV3.ymqfo3cS8EPWQWt6F6d-2GJQDXBHD7KLtY-jtw",
-    "mesari_api_key": "1b6826cf-0661-48bb-94fa-6204052ddc60"
+    "db_url": "",
+    "client_id": "",
+    "server_id": "",
+    "target_channel": "",
+    "bot_token": "",
+    "mesari_api_key": ""
 }
