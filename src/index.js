@@ -5,6 +5,7 @@ const handleAlert = require("./helpers/handleAlert");
 const interactionCreateHandler = require("./bot/botEvents/interactionCreate");
 const ready = require("./bot/botEvents/ready");
 
+// Options for initializing the bot
 const option = {
     intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
 };
